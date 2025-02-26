@@ -18,9 +18,6 @@ features:
     title: 编程
     link: /docs/code/
     details: 编程技能笔记
-  - icon: 📘
-    title: 后端
-    link: /docs/study/rearEnd/
   - icon: 📕
     title: 实战记录
     link: /docs/study/project/
