@@ -8,6 +8,15 @@ export default [
     link: '/docs/tools/',
   },
   {
+    text: '💻编程',
+    items: [
+      { text: '前端三件套', link: '/docs/code/HCJ' },
+      { text: '前端框架', link: '/docs/code/frame' },
+      { text: '其他语言', link: '/docs/code/language' },
+      { text: '实操记录', link: '/docs/code/operation' },
+    ]
+  },
+  {
     text: '考公',
     items: [
       { text: '行测', link: '/docs/kg/xc/判断推理' },

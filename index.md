@@ -14,10 +14,6 @@ hero:
 #      link: /api-examples
 
 features:
-  - icon: 💻
-    title: 编程
-    link: /docs/code/
-    details: 编程技能笔记
   - icon: 📕
     title: 实战记录
     link: /docs/study/project/
