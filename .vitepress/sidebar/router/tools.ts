@@ -1,4 +1,4 @@
-const routes = [
+const list = [
   {
     key: '/docs/tools',
     items: [
@@ -22,4 +22,4 @@ const routes = [
   }
 ]
 
-export default routes
+export default list

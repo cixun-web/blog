@@ -1,4 +1,5 @@
 import tools from "./tools"
+import HCJ from "./HCJ"
 
 const genRouter = (list: {key: string, items: any[]}[]) => {
   const temp = {}
@@ -9,7 +10,8 @@ const genRouter = (list: {key: string, items: any[]}[]) => {
 }
 
 const routerList = [
-  ...tools
+  ...tools,
+  ...HCJ,
 ]
 
 export default genRouter(routerList)

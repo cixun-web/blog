@@ -50,25 +50,30 @@ const jsItems = [
   },
 ]
 
-export default {
-  '/docs/code/HCJ': [
-    {
-      text: 'HTML',
-      collapsed: true,
-      link: '/docs/code/HCJ/html',
-      items: htmlItems
-    },
-    {
-      text: 'css',
-      collapsed: true,
-      link: '/docs/code/HCJ/css',
-      items: cssItems
-    },
-    {
-      text: 'js',
-      collapsed: true,
-      link: '/docs/code/HCJ/js',
-      items: jsItems
-    }
-  ]
-}
+const list = [
+  {
+    key: '/docs/code/HCJ',
+    items: [
+      {
+        text: 'HTML',
+        collapsed: true,
+        link: '/docs/code/HCJ/html',
+        items: htmlItems
+      },
+      {
+        text: 'css',
+        collapsed: true,
+        link: '/docs/code/HCJ/css',
+        items: cssItems
+      },
+      {
+        text: 'js',
+        collapsed: true,
+        link: '/docs/code/HCJ/js',
+        items: jsItems
+      }
+    ]
+  }
+]
+
+export default list
