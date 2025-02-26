@@ -16,9 +16,7 @@ const htmlItems = [
     link: '/docs/code/HCJ/html/interview',
   },
 ]
-
 const cssItems = []
-
 const jsItems = [
   {
     text: '基础知识',
@@ -49,7 +47,6 @@ const jsItems = [
     link: '/docs/code/HCJ/js/刨析原型.md',
   },
 ]
-
 const HCJ = [
   {
     text: 'HTML',
@@ -85,7 +82,7 @@ const vue = [
     link: '/docs/code/frame/vue/组件',
   },
   {
-    text: 'setup',
+    text: '数据响应式',
     link: '/docs/code/frame/vue/数据响应式',
   },
   {
@@ -97,7 +94,7 @@ const vue = [
     link: '/docs/code/frame/vue/计算属性与侦听',
   },
 ]
-
+const react = []
 const frame = [
   {
     text: 'vue',
@@ -109,7 +106,7 @@ const frame = [
     text: 'react',
     collapsed: true,
     link: '/docs/code/frame/react',
-    items: []
+    items: react
   }
 ]
 
