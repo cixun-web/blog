@@ -1,5 +1,3 @@
-import project from "../study/project";
-
 const vue = [
   {
     text: '返回上一级',
