@@ -1,5 +1,5 @@
 import tools from "./tools"
-import HCJ from "./HCJ"
+import code from "./code"
 import kg from "./kg"
 import offer from "./offer"
 import study from "./study"
@@ -14,7 +14,7 @@ const genRouter = (list: {key: string, items: any[]}[]) => {
 
 const routerList = [
   ...tools,
-  ...HCJ,
+  ...code,
   ...kg,
   ...offer,
   ...study,
