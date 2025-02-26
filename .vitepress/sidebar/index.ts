@@ -2,6 +2,7 @@ import tools from "./tools"
 import HCJ from "./HCJ"
 import kg from "./kg"
 import offer from "./offer"
+import study from "./study"
 
 const genRouter = (list: {key: string, items: any[]}[]) => {
   const temp = {}
@@ -16,6 +17,7 @@ const routerList = [
   ...HCJ,
   ...kg,
   ...offer,
+  ...study,
 ]
 
 export default genRouter(routerList)

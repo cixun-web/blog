@@ -2,6 +2,7 @@ export default [
   {
     text: '工具',
     link: '/docs/tools/',
+    items: []
   },
   {
     text: '💻编程',
@@ -31,6 +32,7 @@ export default [
   },
   {
     text: '🗡offer',
-    link: '/docs/offer/html'
+    link: '/docs/offer/html',
+    items: []
   },
 ]
