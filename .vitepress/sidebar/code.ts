@@ -104,6 +104,12 @@ const frame = [
     collapsed: true,
     link: '/docs/code/frame/vue',
     items: vue
+  },
+  {
+    text: 'react',
+    collapsed: true,
+    link: '/docs/code/frame/react',
+    items: []
   }
 ]
 

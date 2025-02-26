@@ -180,7 +180,6 @@ const list = [
         collapsed: true,
         link: '/docs/study/frontEnd/',
         items: [
-          { text: 'react', link: '/docs/study/frontEnd/react/' },
           { text: '状态管理', link: '/docs/study/frontEnd/data' },
         ],
       },
