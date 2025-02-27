@@ -95,6 +95,12 @@ const vue = [
   },
 ]
 const react = []
+const electron = [
+  {
+    text: '起步',
+    link: '/docs/code/frame/electron/start',
+  }
+]
 const frame = [
   {
     text: 'vue',
@@ -107,6 +113,12 @@ const frame = [
     collapsed: true,
     link: '/docs/code/frame/react',
     items: react
+  },
+  {
+    text: 'Electron',
+    collapsed: true,
+    link: '/docs/code/frame/electron',
+    items: electron
   }
 ]
 
