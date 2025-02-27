@@ -9,6 +9,7 @@ export default [
     items: [
       { text: '前端三件套', link: '/docs/code/HCJ/' },
       { text: '前端框架', link: '/docs/code/frame/' },
+      { text: '前端架构', link: '/docs/code/architecture/' },
       { text: '其他语言', link: '/docs/code/language/' },
       { text: '实操记录', link: '/docs/code/operation/' },
     ]

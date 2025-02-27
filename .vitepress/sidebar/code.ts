@@ -99,7 +99,19 @@ const electron = [
   {
     text: '起步',
     link: '/docs/code/frame/electron/start',
-  }
+  },
+  {
+    text: '进程和线程',
+    link: '/docs/code/frame/electron/进程和线程',
+  },
+  {
+    text: '窗口',
+    link: '/docs/code/frame/electron/窗口',
+  },
+  {
+    text: '设置',
+    link: '/docs/code/frame/electron/设置',
+  },
 ]
 const frame = [
   {
@@ -121,6 +133,7 @@ const frame = [
     items: electron
   }
 ]
+const architecture = []
 
 const list = [
   {
@@ -130,7 +143,11 @@ const list = [
   {
     key: '/docs/code/frame',
     items: frame
-  }
+  },
+  {
+    key: '/docs/code/architecture',
+    items: architecture
+  },
 ]
 
 export default list
