@@ -5,6 +5,12 @@ export default [
     items: []
   },
   {
+    text: '🦌',
+    items: [
+      { text: 'Linux', link: '/docs/LQ/linux/' },
+    ]
+  },
+  {
     text: '💻编程',
     items: [
       { text: '前端三件套', link: '/docs/code/HCJ/' },
