@@ -11,6 +11,7 @@ const { Layout } = DefaultTheme
   <Layout>
     <template #nav-bar-content-after>
       <UserInfo />
+      <el-backtop :right="100" :bottom="100" />
     </template>
     <template #not-found>
       <NotFound />
