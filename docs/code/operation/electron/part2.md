@@ -25,7 +25,7 @@ def get_message():
     return jsonify(message="Hello form Python")
 
 if __name__ == '__main__':
-    app.run(port=5000)
+    app.run(host='0.0.0.0', port=5000)
 ```
 
 ### 打包成可执行文件
@@ -109,3 +109,50 @@ app.whenReady().then(() => {
 ```
 :::
 
+## 将打包的exe 内置在electron中
+
+> 直接使用上方打包的exe，内置在electron的时候，启动程序会生成两个pId
+
+:::code-group
+```js [main.js]
+let pyProc = null;
+function startPythonServer() {
+  const resourcePath = process.resourcesPath.indexOf('node_modules') > -1
+    ? path.join(__dirname, 'serve.exe')
+    : path.join(process.resourcesPath, 'serve.exe');
+  pyProc = spawn(resourcePath);
+
+  pyProc.stdout.on('data', (data) => {
+    console.log(`Python 服务输出: ${data}`);
+  });
+
+  pyProc.stderr.on('data', (data) => {
+    console.error(`Python 服务错误: ${data}`);
+  });
+
+  pyProc.on('close', (code) => {
+    console.log(`Python 服务已关闭，退出码: ${code}`);
+  });
+}
+```
+```json [package.json]
+{
+  "build": {
+    "appId": "com.example.app",
+    "files": [
+      "index.html",
+      "main.js",
+      "serve.exe"
+    ],
+    "extraResources": [
+      {
+        "from": "./serve.exe",
+        "to": "./serve.exe",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ]
+  }
+}
+```
